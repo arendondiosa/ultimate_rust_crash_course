@@ -69,4 +69,14 @@ fn main() {
     // println!("This material is just `{}`.", material);
     // bedazzle(&mut material);
     // println!("Wow! Now the material is `{}`!", material);
+
+    fn bedazzle(s: &mut String) {
+        *s = "sparkly".to_string();
+    }
+
+    let mut material = "mud".to_string();
+    println!("This material is just `{}`.", material);
+    bedazzle(&mut material);
+    println!("Wow! Now the material is `{}`!", material);
+
 }
